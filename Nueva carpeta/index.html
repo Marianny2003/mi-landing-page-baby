@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Revelación de Género | Luzmairi & Miguel
+    </title>
+
+    <meta name="description"
+        content="Acompáñanos a descubrir la gran sorpresa de nuestro bebé. Luzmairis y Miguel te invitan a su revelación de género.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/bear.svg">
+
+
+    <!-- ================= GOOGLE FONTS ================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ================= LIBRERÍAS CSS ================= -->
+
+
+    <!-- AOS Scroll Animation -->
+    <link 
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css" 
+        rel="stylesheet">
+
+
+    <!-- Swiper Gallery -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+    <!-- SweetAlert -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
+    <!-- ================= CSS PROPIO ================= -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     PANTALLA DE CARGA
+================================================== -->
+
+
+<div class="loader" id="loader">
+
+    <div class="loader-content">
+
+        <div class="star-loader">
+            ✨
+        </div>
+
+
+        <h2>
+            Un pequeño milagro
+        </h2>
+
+
+        <p>
+            está por llegar...
+        </p>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     FONDO ANIMADO
+================================================== -->
+
+
+<div class="background-elements">
+
+
+    <img 
+        src="asset/img/nube.png"
+        class="cloud cloud-one"
+        alt="Nube">
+
+
+    <img 
+        src="asset/img/oso.png"
+        class="cloud cloud-two"
+        alt="Nube">
+
+
+    <img 
+        src="asset/img/estrellas.png"
+        class="star star-one"
+        alt="Estrella">
+
+
+    <img 
+        src="asset/img/estrellas.png"
+        class="star star-two"
+        alt="Estrella">
+
+
+    <img 
+        src="asset/img/Luna.png"
+        class="moon"
+        alt="Luna">
+
+
+</div>
+
+
+
+
+
+<!-- ==================================================
+     BOTÓN MÚSICA
+================================================== -->
+
+
+<button 
+    class="music-button"
+    id="musicButton"
+    aria-label="Control de música">
+
+
+    <span id="musicIcon">
+        🎵
+    </span>
+
+
+</button>
+
+
+
+<audio 
+    id="backgroundMusic"
+    loop>
+
+    <source 
+        src="asset/audio/bebe.mp3"
+        type="audio/mp3">
+
+</audio>
+
+
+
+
+
+
+<!-- ==================================================
+     HERO PRINCIPAL
+================================================== -->
+
+
+<header class="hero">
+
+
+    <div class="hero-container">
+
+
+        <p 
+            class="small-title"
+            data-aos="fade-down">
+
+            ✨ Una dulce espera ✨
+
+        </p>
+
+
+
+        <h1 data-aos="zoom-in">
+
+            Luzmairi
+            <span>&</span>
+            Miguel
+
+        </h1>
+
+
+
+        <p 
+            class="hero-text"
+            data-aos="fade-up">
+
+
+            Tenemos una hermosa sorpresa
+            que queremos compartir contigo.
+
+
+        </p>
+
+
+
+
+
+        <!-- SOBRE -->
+
+        <div 
+            class="envelope-wrapper"
+            id="envelope">
+
+
+            <div class="envelope">
+
+
+                <div class="envelope-flap"></div>
+
+
+                <div class="letter">
+
+
+                    <h3>
+                        ¿Niño o niña?
+                    </h3>
+
+
+                    <p>
+                        Descúbrelo con nosotros
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <button 
+            class="primary-button"
+            id="openInvitation">
+
+
+            💌 Abrir invitación
+
+
+        </button>
+
+
+
+    </div>
+
+
+</header>
+
+
+
+
+
+<!-- ==================================================
+     HISTORIA
+================================================== -->
+
+
+<section 
+    class="story section"
+    data-aos="fade-up">
+
+
+    <div class="container">
+
+
+        <span class="section-icon">
+            🧸
+        </span>
+
+
+
+        <h2>
+            Una nueva aventura comienza
+        </h2>
+
+
+
+        <p>
+
+
+            Hace unos meses comenzó la etapa más hermosa
+            de nuestras vidas.
+
+
+            Hoy queremos compartir contigo la emoción,
+            la alegría y el amor que sentimos mientras
+            esperamos conocer a nuestro pequeño milagro.
+
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+<!-- ==================================================
+     FOTO DE LOS PADRES
+================================================== -->
+
+
+<section 
+    class="parents section"
+    data-aos="fade-up">
+
+
+    <div class="container">
+
+
+        <div class="parents-card">
+
+
+            <div class="photo-wrapper">
+
+
+                <!-- Cambiar por la foto real -->
+                <img 
+                    src="asset/img/luzabrazados.jpeg"
+                    alt="Luzmairi y Miguel">
+
+
+            </div>
+
+
+
+            <div class="parents-message">
+
+
+                <h2>
+                    Nuestro pequeño milagro
+                </h2>
+
+
+                <p>
+
+                    El amor se hizo más grande
+                    y nuestros corazones esperan
+                    con ilusión este nuevo capítulo.
+
+                </p>
+
+
+                <div class="heart">
+                    🤍
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==================================================
+     CUENTA REGRESIVA
+================================================== -->
+
+
+<section 
+    class="countdown section"
+    data-aos="fade-up">
+
+
+    <div class="container">
+
+
+        <h2>
+            La gran sorpresa llegará en...
+        </h2>
+
+
+
+        <div class="countdown-container">
+
+
+
+            <div class="time-box">
+
+
+                <span id="days">
+                    00
+                </span>
+
+
+                <small>
+                    Días
+                </small>
+
+
+            </div>
+
+
+
+
+            <div class="time-box">
+
+
+                <span id="hours">
+                    00
+                </span>
+
+
+                <small>
+                    Horas
+                </small>
+
+
+            </div>
+
+
+
+
+            <div class="time-box">
+
+
+                <span id="minutes">
+                    00
+                </span>
+
+
+                <small>
+                    Minutos
+                </small>
+
+
+            </div>
+
+
+
+
+            <div class="time-box">
+
+
+                <span id="seconds">
+                    00
+                </span>
+
+
+                <small>
+                    Segundos
+                </small>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==================================================
+     INFORMACIÓN DEL EVENTO
+================================================== -->
+
+
+<section 
+    class="event section"
+    data-aos="fade-up">
+
+
+    <div class="container">
+
+
+        <h2>
+            Detalles del evento
+        </h2>
+
+
+
+        <div class="event-grid">
+
+
+
+            <article class="event-card">
+
+
+                <span>
+                    📅
+                </span>
+
+
+                <h3>
+                    Fecha
+                </h3>
+
+
+                <p>
+                    12 de julio del 2026
+                </p>
+
+
+            </article>
+
+
+
+
+
+            <article class="event-card">
+
+
+                <span>
+                    🕒
+                </span>
+
+
+                <h3>
+                    Hora
+                </h3>
+
+
+                <p>
+                    3:00 PM
+                </p>
+
+
+            </article>
+
+
+
+
+
+
+            <article class="event-card">
+
+
+                <span>
+                    📍
+                </span>
+
+
+                <h3>
+                    Lugar
+                </h3>
+
+
+                <p>
+                    Mi refugio, dos cuadras del roble a mano derecha e izquierda. Referencia porton rojo.
+                </p>
+
+
+
+                <a 
+                    href="https://maps.google.com/?q=9.915730,-69.623016"
+                    class="location-button"
+                    target="_blank">
+
+
+                    Ver ubicación
+
+
+                </a>
+
+
+
+            </article>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==================================================
+     DRESS CODE
+================================================== -->
+
+
+<section 
+    class="dress-code section"
+    data-aos="zoom-in">
+
+
+    <div class="container">
+
+
+        <div class="dress-card">
+
+
+            <span>
+                👗
+            </span>
+
+
+            <h2>
+                Dress Code
+            </h2>
+
+
+
+            <p>
+                Blanco
+            </p>
+
+
+            <p>
+                Beige
+            </p>
+
+
+
+            <small>
+                Para acompañarnos
+                en este día especial.
+            </small>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- ==================================================
+     VOTACIÓN
+================================================== -->
+
+
+<section 
+    class="vote section"
+    data-aos="fade-up">
+
+
+    <div class="container">
+
+
+        <h2>
+            ¿Qué crees que será?
+        </h2>
+
+
+        <p>
+            Vota por tu predicción
+        </p>
+
+
+
+
+
+        <div class="vote-options">
+
+
+
+            <!-- ===============================
+                 TEAM NIÑO
+            ================================ -->
+
+
+            <button 
+                class="vote-card boy"
+                id="voteBoy"
+                data-vote="niño">
+
+
+
+                <div class="vote-icon">
+                    💙
+                </div>
+
+
+
+
+                <h3>
+                    Team Niño
+                </h3>
+
+
+
+
+
+                <div class="vote-result">
+
+
+
+                    <span id="boyPercentage">
+                        0%
+                    </span>
+
+
+
+                    <small id="boyVotes">
+                        0 votos
+                    </small>
+
+
+
+                </div>
+
+
+
+            </button>
+
+
+
+
+
+
+
+
+            <!-- ===============================
+                 TEAM NIÑA
+            ================================ -->
+
+
+            <button 
+                class="vote-card girl"
+                id="voteGirl"
+                data-vote="niña">
+
+
+
+                <div class="vote-icon">
+                    🩷
+                </div>
+
+
+
+
+
+                <h3>
+                    Team Niña
+                </h3>
+
+
+
+
+
+                <div class="vote-result">
+
+
+
+                    <span id="girlPercentage">
+                        0%
+                    </span>
+
+
+
+                    <small id="girlVotes">
+                        0 votos
+                    </small>
+
+
+
+                </div>
+
+
+
+            </button>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- ===============================
+             RESULTADOS VISUALES
+        ================================ -->
+
+
+        <div class="vote-chart">
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==================================================
+     GALERÍA DE FOTOS
+================================================== -->
+
+
+<section 
+    class="gallery section"
+    data-aos="fade-up">
+
+
+    <div class="container">
+
+
+        <h2>
+            Nuestros momentos
+        </h2>
+
+
+        <p>
+            Un pequeño vistazo a nuestra historia
+        </p>
+
+
+
+
+        <!-- Swiper -->
+
+        <div class="swiper gallery-slider">
+
+
+            <div class="swiper-wrapper">
+
+
+
+                <div class="swiper-slide">
+
+
+                    <img 
+                        src="asset/img/ecodos.jpeg"
+                        alt="Momento especial">
+
+
+                </div>
+
+
+
+
+                <div class="swiper-slide">
+
+
+                    <img 
+                        src="asset/img/luzmaymiguel.jpeg"
+                        alt="Momento especial">
+
+
+                </div>
+
+
+
+
+
+                <div class="swiper-slide">
+
+
+                    <img 
+                        src="asset/img/eco.jpeg"
+                        alt="Momento especial">
+
+
+                </div>
+
+
+
+
+
+                <div class="swiper-slide">
+
+
+                    <img 
+                        src="asset/img/sentados.jpeg"
+                        alt="Momento especial">
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="swiper-pagination"></div>
+
+
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-button-prev"></div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==================================================
+     CONFIRMACIÓN DE ASISTENCIA
+================================================== -->
+
+
+<section 
+    class="confirmation section"
+    data-aos="zoom-in">
+
+
+    <div class="container">
+
+
+
+        <div class="confirmation-card">
+
+    <span>
+        💌
+    </span>
+
+    <h2>
+        ¿Nos acompañas?
+    </h2>
+
+    <p>
+        Confirma tu asistencia con cualquiera de nosotros.
+    </p>
+
+    <div class="confirmation-buttons">
+
+        <a
+            class="primary-button whatsapp-mom"
+            href="https://wa.me/5804245098672?text=Hola%20Luzmairis%20%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20revelación%20de%20género.%20"
+            target="_blank">
+
+            💗 Confirmar con Luzmairis
+
+        </a>
+
+        <a
+            class="primary-button whatsapp-dad"
+            href="https://wa.me/5804140642307?text=Hola%20Miguel%20%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20revelación%20de%20género.%20"
+            target="_blank">
+
+            💙 Confirmar con Miguel
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ==================================================
+     MENSAJE FINAL
+================================================== -->
+
+
+<section 
+    class="final-message section">
+
+
+    <div class="container">
+
+
+
+        <div class="final-content">
+
+
+
+            <img
+                src="asset/img/oso.png"
+                alt="Osito">
+
+
+            <h2>
+                Gracias por acompañarnos
+            </h2>
+
+
+
+            <p>
+
+
+                Esperamos compartir contigo
+                este momento lleno de amor,
+                alegría y mucha emoción.
+
+
+            </p>
+
+
+
+            <div class="confetti-area"></div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+
+<footer class="footer">
+
+
+    <p>
+
+        Con mucho amor,
+
+    </p>
+
+
+
+    <h3>
+
+        Luzmairi & Miguel
+
+    </h3>
+
+
+
+    <span>
+        🤍 2026 🤍
+    </span>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+<!-- ==================================================
+     LIBRERÍAS JAVASCRIPT
+================================================== -->
+
+
+<!-- AOS -->
+
+<script 
+src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+
+
+
+
+<!-- Swiper -->
+
+<script 
+src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+</script>
+
+
+
+
+
+<!-- SweetAlert -->
+
+<script 
+src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+</script>
+
+
+
+
+
+<!-- Canvas Confetti -->
+
+<script
+src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js">
+</script>
+
+
+
+
+
+
+
+<!-- ==================================================
+     JS PROPIO
+================================================== -->
+
+
+<script src="js/app.js"></script>
+
+<script src="js/invitation.js"></script>
+
+<script src="js/countdown.js"></script>
+
+<script src="js/gallery.js"></script>
+
+<script src="js/music.js"></script>
+
+<script src="js/vote.js"></script>
+
+<script src="js/form.js"></script>
+
+<script src="js/animations.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1102 @@
+/* =====================================================
+   TABLETS Y PANTALLAS MEDIANAS
+===================================================== */
+
+
+@media (max-width: 900px) {
+
+
+
+    .section {
+
+        padding:
+            70px 0;
+
+    }
+
+
+
+
+
+    /* HERO */
+
+
+    .hero h1 {
+
+
+        font-size:
+            75px;
+
+
+    }
+
+
+
+
+
+    .hero-text {
+
+
+        font-size:
+            16px;
+
+
+    }
+
+
+
+
+
+
+
+    /* PADRES */
+
+
+    .parents-card {
+
+
+        grid-template-columns:
+            1fr;
+
+
+
+        padding:
+            30px;
+
+
+
+    }
+
+
+
+
+
+    .photo-wrapper img {
+
+
+        height:
+            400px;
+
+
+    }
+
+
+
+
+
+
+    /* EVENTO */
+
+
+    .event-grid {
+
+
+        grid-template-columns:
+            1fr;
+
+
+    }
+
+
+
+
+
+
+    /* VOTACIÓN */
+
+
+    .vote-options {
+
+
+        grid-template-columns:
+            1fr;
+
+
+    }
+
+
+
+
+
+
+    .vote-card h3 {
+
+
+        font-size:
+            35px;
+
+
+    }
+
+
+
+
+
+
+    /* GALERÍA */
+
+
+    .swiper-slide img {
+
+
+        height:
+            420px;
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   CELULARES
+===================================================== */
+
+
+@media (max-width:600px) {
+
+
+
+
+    body {
+
+
+        overflow-x:
+            hidden;
+
+
+    }
+
+
+
+
+
+
+    .container {
+
+
+        width:
+            92%;
+
+
+    }
+
+
+
+
+
+
+    .section {
+
+
+        padding:
+            55px 0;
+
+
+    }
+
+
+
+
+
+
+
+
+    /* HERO */
+
+
+    .hero {
+
+
+        min-height:
+            100svh;
+
+
+    }
+
+
+
+
+
+
+    .small-title {
+
+
+        font-size:
+            15px;
+
+
+    }
+
+
+
+
+
+
+    .hero h1 {
+
+
+        font-size:
+            55px;
+
+
+
+        line-height:
+            1;
+
+
+
+    }
+
+
+
+
+
+
+    .hero-text {
+
+
+        font-size:
+            15px;
+
+
+
+        padding:
+            0 15px;
+
+
+
+    }
+
+
+
+
+
+
+    /* SOBRE */
+
+
+    .envelope-wrapper {
+
+
+        width:
+            230px;
+
+
+
+        height:
+            160px;
+
+
+
+    }
+
+
+
+
+
+
+
+
+    .letter h3 {
+
+
+        font-size:
+            22px;
+
+
+    }
+
+
+
+
+
+
+
+    .primary-button {
+
+
+        padding:
+            13px 28px;
+
+
+
+        font-size:
+            14px;
+
+
+
+    }
+
+
+
+
+
+
+
+    /* HISTORIA */
+
+
+    .story h2,
+    .event h2,
+    .vote h2,
+    .gallery h2,
+    .confirmation h2 {
+
+
+        font-size:
+            38px;
+
+
+    }
+
+
+
+
+
+
+
+    .story p {
+
+
+        font-size:
+            15px;
+
+
+        line-height:
+            1.8;
+
+
+    }
+
+
+
+
+
+
+
+
+    /* PADRES */
+
+
+    .parents-card {
+
+
+        padding:
+            25px;
+
+
+
+        border-radius:
+            25px;
+
+
+    }
+
+
+
+
+
+    .photo-wrapper img {
+
+
+        height:
+            320px;
+
+
+    }
+
+
+
+
+
+
+    .parents-message h2 {
+
+
+        font-size:
+            38px;
+
+
+    }
+
+
+
+
+
+
+}
+/* =====================================================
+   CUENTA REGRESIVA MÓVIL
+===================================================== */
+
+
+@media (max-width:600px){
+
+
+
+    .countdown h2 {
+
+
+        font-size:
+            36px;
+
+
+    }
+
+
+
+
+
+
+    .countdown-container {
+
+
+        gap:
+            12px;
+
+
+    }
+
+
+
+
+
+
+
+    .time-box {
+
+
+        width:
+            75px;
+
+
+
+        height:
+            85px;
+
+
+
+        border-radius:
+            18px;
+
+
+    }
+
+
+
+
+
+
+
+    .time-box span {
+
+
+        font-size:
+            38px;
+
+
+    }
+
+
+
+
+
+
+
+    .time-box small {
+
+
+        font-size:
+            12px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* =================================================
+       EVENTO
+    ================================================= */
+
+
+
+    .event-card {
+
+
+        padding:
+            25px 15px;
+
+
+    }
+
+
+
+
+
+
+
+    .event-card h3 {
+
+
+        font-size:
+            26px;
+
+
+    }
+
+
+
+
+
+
+    .event-card p {
+
+
+        font-size:
+            14px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* =================================================
+       DRESS CODE
+    ================================================= */
+
+
+
+    .dress-card {
+
+
+        padding:
+            40px 20px;
+
+
+
+        border-radius:
+            30px;
+
+
+    }
+
+
+
+
+
+
+
+    .dress-card h2 {
+
+
+        font-size:
+            38px;
+
+
+    }
+
+
+
+
+
+
+
+    .dress-card p {
+
+
+        font-size:
+            18px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* =================================================
+       VOTACIÓN
+    ================================================= */
+
+
+
+    .vote-options {
+
+
+        gap:
+            20px;
+
+
+    }
+
+
+
+
+
+
+
+    .vote-card {
+
+
+        padding:
+            30px 15px;
+
+
+    }
+
+
+
+
+
+
+
+    .vote-icon {
+
+
+        font-size:
+            50px;
+
+
+    }
+
+
+
+
+
+
+
+    .vote-card h3 {
+
+
+        font-size:
+            32px;
+
+
+    }
+
+
+
+
+
+
+
+    .vote-result span {
+
+
+        font-size:
+            35px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* =================================================
+       GALERÍA
+    ================================================= */
+
+
+
+    .gallery-slider {
+
+
+        padding-bottom:
+            45px;
+
+
+    }
+
+
+
+
+
+
+
+    .swiper-slide img {
+
+
+        height:
+            350px;
+
+
+
+        border-radius:
+            20px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* =================================================
+       CONFIRMACIÓN
+    ================================================= */
+
+
+
+    .confirmation-card {
+
+
+        padding:
+            40px 20px;
+
+
+
+        border-radius:
+            30px;
+
+
+    }
+
+
+
+
+
+
+
+    .confirmation-card span {
+
+
+        font-size:
+            45px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* =================================================
+       MODAL
+    ================================================= */
+
+
+
+    .modal {
+
+
+        padding:
+            15px;
+
+
+    }
+
+
+
+
+
+
+    .modal-content {
+
+
+        padding:
+            30px 20px;
+
+
+
+        border-radius:
+            25px;
+
+
+    }
+
+
+
+
+
+
+
+    .modal-content h2 {
+
+
+        font-size:
+            35px;
+
+
+    }
+
+
+
+
+
+
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+
+
+        padding:
+            12px;
+
+
+
+        font-size:
+            14px;
+
+
+    }
+
+
+
+
+
+
+
+
+    /* =================================================
+       FINAL
+    ================================================= */
+
+
+
+    .final-content img {
+
+
+        width:
+            100px;
+
+
+    }
+
+
+
+
+
+
+
+    .final-content h2 {
+
+
+        font-size:
+            40px;
+
+
+    }
+
+
+
+
+
+
+
+    .final-content p {
+
+
+        font-size:
+            14px;
+
+
+
+        padding:
+            0 10px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* =================================================
+       FOOTER
+    ================================================= */
+
+
+
+    .footer {
+
+
+        padding:
+            30px 15px;
+
+
+    }
+
+
+
+
+
+
+
+    .footer h3 {
+
+
+        font-size:
+            32px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* =================================================
+       BOTÓN MÚSICA
+    ================================================= */
+
+
+
+    .music-button {
+
+
+        width:
+            48px;
+
+
+
+        height:
+            48px;
+
+
+
+        right:
+            15px;
+
+
+
+        bottom:
+            15px;
+
+
+
+        font-size:
+            18px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   CELULARES MUY PEQUEÑOS
+===================================================== */
+
+
+@media(max-width:380px){
+
+
+
+    .hero h1 {
+
+
+        font-size:
+            48px;
+
+
+    }
+
+
+
+
+
+
+    .time-box {
+
+
+        width:
+            65px;
+
+
+
+        height:
+            75px;
+
+
+    }
+
+
+
+
+
+
+
+    .time-box span {
+
+
+        font-size:
+            32px;
+
+
+    }
+
+
+
+
+
+    .primary-button {
+
+
+        width:
+            100%;
+
+
+    }
+
+
+
+}

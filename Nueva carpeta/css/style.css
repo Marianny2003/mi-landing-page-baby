@@ -1,0 +1,2995 @@
+/* =====================================================
+   VARIABLES GLOBALES
+===================================================== */
+
+
+:root {
+
+
+    /* COLORES PRINCIPALES */
+
+    --cream: #FFFDF8;
+
+    --beige: #F8E7D5;
+
+    --blue-soft: #D9EAFD;
+
+    --pink-soft: #F8DDEB;
+
+    --gold: #C7A96B;
+
+
+    /* TEXTO */
+
+    --text-dark: #5D5148;
+
+    --text-light: #8A7D72;
+
+
+    /* EFECTOS */
+
+    --shadow:
+        0 15px 40px rgba(199, 169, 107, .15);
+
+
+    --radius:
+        25px;
+
+
+    /* TIPOGRAFÍAS */
+
+    --title-font:
+        'Cormorant Garamond',
+        serif;
+
+
+    --body-font:
+        'Poppins',
+        sans-serif;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   RESET GENERAL
+===================================================== */
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+body {
+
+
+    background:
+        var(--cream);
+
+
+    color:
+        var(--text-dark);
+
+
+    font-family:
+        var(--body-font);
+
+
+    overflow-x:
+        hidden;
+
+
+}
+
+
+
+
+
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+
+
+button {
+
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family:
+        var(--body-font);
+
+
+}
+
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+
+
+
+
+/* =====================================================
+   CONTENEDOR GENERAL
+===================================================== */
+
+
+.container {
+
+
+    width: min(90%, 1100px);
+
+    margin:
+        auto;
+
+
+}
+
+
+
+
+.section {
+
+
+    padding:
+        90px 0;
+
+
+    position:
+        relative;
+
+
+}
+
+
+
+
+
+/* =====================================================
+   LOADER
+===================================================== */
+
+
+.loader {
+
+
+    position:
+        fixed;
+
+
+    inset:
+        0;
+
+
+    background:
+        var(--cream);
+
+
+    z-index:
+        9999;
+
+
+    display:
+        flex;
+
+
+    justify-content:
+        center;
+
+
+    align-items:
+        center;
+
+
+
+    transition:
+        opacity .6s ease,
+        visibility .6s ease;
+
+
+}
+
+
+
+
+.loader.hide {
+
+
+    opacity:
+        0;
+
+
+    visibility:
+        hidden;
+
+
+}
+
+
+
+
+
+
+.loader-content {
+
+
+    text-align:
+        center;
+
+
+    animation:
+        float 3s infinite ease-in-out;
+
+
+}
+
+
+
+.star-loader {
+
+
+    font-size:
+        45px;
+
+
+    margin-bottom:
+        20px;
+
+
+}
+
+
+
+
+.loader h2 {
+
+
+    font-family:
+        var(--title-font);
+
+
+    font-size:
+        42px;
+
+
+    font-weight:
+        600;
+
+
+}
+
+
+
+.loader p {
+
+
+    color:
+        var(--text-light);
+
+
+    font-size:
+        18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FONDO ANIMADO
+===================================================== */
+
+
+.background-elements {
+
+
+    position:
+        fixed;
+
+
+    inset:
+        0;
+
+
+    pointer-events:
+        none;
+
+
+    overflow:
+        hidden;
+
+
+    z-index:
+        -1;
+
+
+}
+
+
+
+
+
+
+.cloud {
+
+
+    position:
+        absolute;
+
+
+    opacity:
+        .65;
+
+
+}
+
+
+
+
+.cloud-one {
+
+
+    width:
+        260px;
+
+
+    top:
+        80px;
+
+
+    left:
+        -50px;
+
+
+}
+
+
+
+
+
+.cloud-two {
+
+
+    width:
+        220px;
+
+
+    right:
+        -40px;
+
+
+    top:
+        280px;
+
+
+}
+
+
+
+
+
+
+.moon {
+
+
+    position:
+        absolute;
+
+
+    width:
+        130px;
+
+
+    right:
+        60px;
+
+
+    top:
+        70px;
+
+
+}
+
+
+
+
+
+.star {
+
+
+    position:
+        absolute;
+
+
+    width:
+        35px;
+
+
+}
+
+
+
+
+.star-one {
+
+
+    top:
+        180px;
+
+
+    left:
+        25%;
+
+
+}
+
+
+
+
+
+.star-two {
+
+
+    bottom:
+        200px;
+
+
+    right:
+        20%;
+
+
+}
+
+/* =====================================================
+   BOTÓN DE MÚSICA
+===================================================== */
+
+
+.music-button {
+
+
+    position:
+        fixed;
+
+
+    right:
+        25px;
+
+
+    bottom:
+        25px;
+
+
+
+    width:
+        55px;
+
+
+
+    height:
+        55px;
+
+
+
+    border-radius:
+        50%;
+
+
+
+    background:
+        white;
+
+
+
+    box-shadow:
+        var(--shadow);
+
+
+
+    display:
+        flex;
+
+
+
+    align-items:
+        center;
+
+
+
+    justify-content:
+        center;
+
+
+
+    font-size:
+        22px;
+
+
+
+    z-index:
+        1000;
+
+
+
+    transition:
+        .3s ease;
+
+
+}
+
+
+
+.music-button:hover {
+
+
+    transform:
+        scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+
+.hero {
+
+
+    min-height:
+        100vh;
+
+
+
+    display:
+        flex;
+
+
+
+    justify-content:
+        center;
+
+
+
+    align-items:
+        center;
+
+
+
+    text-align:
+        center;
+
+
+
+    padding:
+        40px 0;
+
+
+
+}
+
+
+
+
+.hero-container {
+
+
+    max-width:
+        700px;
+
+
+}
+
+
+
+
+
+.small-title {
+
+
+    font-size:
+        18px;
+
+
+
+    color:
+        var(--gold);
+
+
+
+    letter-spacing:
+        2px;
+
+
+
+    margin-bottom:
+        20px;
+
+
+
+}
+
+
+
+
+
+
+.hero h1 {
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        clamp(60px, 10vw, 100px);
+
+
+
+    line-height:
+        .9;
+
+
+
+    font-weight:
+        600;
+
+
+
+    color:
+        var(--text-dark);
+
+
+}
+
+
+
+
+
+
+
+.hero h1 span {
+
+
+    color:
+        var(--gold);
+
+
+}
+
+
+
+
+
+
+
+.hero-text {
+
+
+    margin:
+        30px auto;
+
+
+
+    max-width:
+        500px;
+
+
+
+    font-size:
+        18px;
+
+
+
+    color:
+        var(--text-light);
+
+
+
+    line-height:
+        1.8;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   SOBRE DE INVITACIÓN
+===================================================== */
+
+
+
+.envelope-wrapper {
+
+
+    width:
+        260px;
+
+
+
+    height:
+        190px;
+
+
+
+    margin:
+        40px auto;
+
+
+
+    perspective:
+        1000px;
+
+
+
+}
+
+
+
+
+
+
+.envelope {
+
+
+    position:
+        relative;
+
+
+
+    width:
+        100%;
+
+
+
+    height:
+        100%;
+
+
+
+    background:
+        var(--pink-soft);
+
+
+
+    border-radius:
+        10px;
+
+
+
+    box-shadow:
+        var(--shadow);
+
+
+
+    overflow:
+        hidden;
+
+
+
+}
+
+
+
+
+
+
+
+.envelope-flap {
+
+
+    position:
+        absolute;
+
+
+
+    top:
+        0;
+
+
+
+    left:
+        0;
+
+
+
+    width:
+        100%;
+
+
+
+    height:
+        50%;
+
+
+
+    background:
+        var(--beige);
+
+
+
+    clip-path:
+        polygon(0 0, 100% 0, 50% 100%);
+
+
+
+    transform-origin:
+        top;
+
+
+
+    transition:
+        transform 1s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.envelope.open .envelope-flap {
+
+
+    transform:
+        rotateX(180deg);
+
+
+
+}
+
+
+
+
+
+
+.letter {
+
+
+    position:
+        absolute;
+
+
+
+    bottom:
+        15px;
+
+
+
+    left:
+        15px;
+
+
+
+    right:
+        15px;
+
+
+
+    height:
+        100px;
+
+
+
+    background:
+        white;
+
+
+
+    border-radius:
+        15px;
+
+
+
+    display:
+        flex;
+
+
+
+    flex-direction:
+        column;
+
+
+
+    justify-content:
+        center;
+
+
+
+    align-items:
+        center;
+
+
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,.05);
+
+
+
+}
+
+
+
+
+
+
+.letter h3 {
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        28px;
+
+
+
+}
+
+
+
+
+
+.letter p {
+
+
+    font-size:
+        14px;
+
+
+
+    color:
+        var(--text-light);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+
+.primary-button {
+
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--gold),
+            #E4C88E
+        );
+
+
+
+    color:
+        white;
+
+
+
+    padding:
+        15px 35px;
+
+
+
+    border-radius:
+        50px;
+
+
+
+    font-size:
+        16px;
+
+
+
+    box-shadow:
+        0 15px 30px rgba(199,169,107,.25);
+
+
+
+    transition:
+        .3s ease;
+
+
+
+}
+
+
+
+
+
+
+.primary-button:hover {
+
+
+    transform:
+        translateY(-5px);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   HISTORIA
+===================================================== */
+
+
+.story {
+
+
+    text-align:
+        center;
+
+
+
+}
+
+
+
+
+
+.section-icon {
+
+
+    display:
+        block;
+
+
+
+    font-size:
+        45px;
+
+
+
+    margin-bottom:
+        20px;
+
+
+
+}
+
+
+
+
+
+
+.story h2,
+.event h2,
+.vote h2,
+.gallery h2,
+.confirmation h2 {
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        clamp(38px,5vw,55px);
+
+
+
+    margin-bottom:
+        25px;
+
+
+
+}
+
+
+
+
+
+
+
+.story p {
+
+
+    max-width:
+        700px;
+
+
+
+    margin:
+        auto;
+
+
+
+    line-height:
+        2;
+
+
+
+    color:
+        var(--text-light);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   PADRES
+===================================================== */
+
+
+.parents-card {
+
+
+    background:
+        rgba(255,255,255,.7);
+
+
+
+    backdrop-filter:
+        blur(10px);
+
+
+
+    border-radius:
+        var(--radius);
+
+
+
+    padding:
+        40px;
+
+
+
+    box-shadow:
+        var(--shadow);
+
+
+
+    display:
+        grid;
+
+
+
+    grid-template-columns:
+        1fr 1fr;
+
+
+
+    gap:
+        40px;
+
+
+
+    align-items:
+        center;
+
+
+
+}
+
+
+
+
+
+
+
+.photo-wrapper img {
+
+
+    border-radius:
+        25px;
+
+
+
+    height:
+        450px;
+
+
+
+    width:
+        100%;
+
+
+
+    object-fit:
+        cover;
+
+
+
+}
+
+
+
+
+
+
+.parents-message {
+
+
+    text-align:
+        center;
+
+
+
+}
+
+
+
+.parents-message h2 {
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        45px;
+
+
+
+}
+
+
+
+.parents-message p {
+
+
+    color:
+        var(--text-light);
+
+
+
+    line-height:
+        2;
+
+
+
+}
+
+
+
+.heart {
+
+
+    font-size:
+        40px;
+
+
+
+    margin-top:
+        20px;
+
+
+
+}
+
+/* =====================================================
+   CUENTA REGRESIVA
+===================================================== */
+
+
+.countdown {
+
+
+    text-align:
+        center;
+
+
+}
+
+
+
+
+.countdown h2 {
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        45px;
+
+
+
+    margin-bottom:
+        40px;
+
+
+
+}
+
+
+
+
+
+
+.countdown-container {
+
+
+    display:
+        flex;
+
+
+
+    justify-content:
+        center;
+
+
+
+    flex-wrap:
+        wrap;
+
+
+
+    gap:
+        20px;
+
+
+
+}
+
+
+
+
+
+
+
+.time-box {
+
+
+    background:
+        white;
+
+
+
+    width:
+        120px;
+
+
+
+    height:
+        120px;
+
+
+
+    border-radius:
+        25px;
+
+
+
+    display:
+        flex;
+
+
+
+    flex-direction:
+        column;
+
+
+
+    justify-content:
+        center;
+
+
+
+    align-items:
+        center;
+
+
+
+    box-shadow:
+        var(--shadow);
+
+
+
+}
+
+
+
+
+
+
+
+.time-box span {
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        55px;
+
+
+
+    color:
+        var(--gold);
+
+
+
+    font-weight:
+        700;
+
+
+
+}
+
+
+
+
+
+
+.time-box small {
+
+
+    color:
+        var(--text-light);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   EVENTO
+===================================================== */
+
+
+.event {
+
+
+    text-align:
+        center;
+
+
+
+}
+
+
+
+
+
+
+.event-grid {
+
+
+    display:
+        grid;
+
+
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+
+
+    gap:
+        25px;
+
+
+
+}
+
+
+
+
+
+.event-card {
+
+
+    background:
+        white;
+
+
+
+    padding:
+        35px 20px;
+
+
+
+    border-radius:
+        var(--radius);
+
+
+
+    box-shadow:
+        var(--shadow);
+
+
+
+    transition:
+        .3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.event-card:hover {
+
+
+    transform:
+        translateY(-8px);
+
+
+
+}
+
+
+
+
+
+
+
+.event-card span {
+
+
+    font-size:
+        45px;
+
+
+
+}
+
+
+
+
+
+.event-card h3 {
+
+
+    margin:
+        20px 0 10px;
+
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        30px;
+
+
+
+}
+
+
+
+
+
+
+.event-card p {
+
+
+    color:
+        var(--text-light);
+
+
+
+}
+
+
+
+
+
+.location-button {
+
+
+    display:
+        inline-block;
+
+
+
+    margin-top:
+        15px;
+
+
+
+    padding:
+        10px 20px;
+
+
+
+    background:
+        var(--blue-soft);
+
+
+
+    border-radius:
+        30px;
+
+
+
+    color:
+        var(--text-dark);
+
+
+
+    font-size:
+        14px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   DRESS CODE
+===================================================== */
+
+
+.dress-code {
+
+
+    text-align:
+        center;
+
+
+
+}
+
+
+
+
+
+
+.dress-card {
+
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--pink-soft),
+            var(--blue-soft)
+        );
+
+
+
+    border-radius:
+        40px;
+
+
+
+    padding:
+        60px 30px;
+
+
+
+    box-shadow:
+        var(--shadow);
+
+
+
+}
+
+
+
+
+
+.dress-card span {
+
+
+    font-size:
+        50px;
+
+
+
+}
+
+
+
+
+
+.dress-card h2 {
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        50px;
+
+
+
+}
+
+
+
+
+
+.dress-card p {
+
+
+    font-size:
+        22px;
+
+
+
+    margin:
+        10px;
+
+
+
+}
+
+
+
+
+
+.dress-card small {
+
+
+    color:
+        var(--text-light);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   VOTACIÓN
+===================================================== */
+
+
+.vote {
+
+
+    text-align:
+        center;
+
+
+
+}
+
+
+
+
+
+
+
+.vote-options {
+
+
+    display:
+        grid;
+
+
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+
+
+    gap:
+        30px;
+
+
+
+    margin-top:
+        40px;
+
+
+
+}
+
+
+
+
+
+
+
+
+.vote-card {
+
+
+    padding:
+        40px 20px;
+
+
+
+    border-radius:
+        35px;
+
+
+
+    background:
+        white;
+
+
+
+    box-shadow:
+        var(--shadow);
+
+
+
+    transition:
+        .3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.vote-card:hover {
+
+
+    transform:
+        scale(1.03);
+
+
+
+}
+
+
+
+
+
+
+
+
+.vote-card.boy {
+
+
+    border:
+        3px solid var(--blue-soft);
+
+
+
+}
+
+
+
+
+
+
+.vote-card.girl {
+
+
+    border:
+        3px solid var(--pink-soft);
+
+
+
+}
+
+
+
+
+
+
+
+.vote-icon {
+
+
+    font-size:
+        60px;
+
+
+
+}
+
+
+
+
+
+
+
+.vote-card h3 {
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        40px;
+
+
+
+    margin:
+        20px 0;
+
+
+
+}
+
+
+
+
+
+
+
+.vote-result span {
+
+
+    font-size:
+        40px;
+
+
+
+    font-weight:
+        700;
+
+
+
+    color:
+        var(--gold);
+
+
+
+}
+
+
+
+
+
+
+
+.vote-result small {
+
+
+    display:
+        block;
+
+
+
+    color:
+        var(--text-light);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   BARRAS DE VOTACIÓN
+===================================================== */
+
+
+.vote-chart {
+
+
+    margin-top:
+        50px;
+
+
+
+}
+
+
+
+
+
+
+.bar-container {
+
+
+    margin-bottom:
+        25px;
+
+
+
+    text-align:
+        left;
+
+
+
+}
+
+
+
+
+
+
+
+.bar-container p {
+
+
+    margin-bottom:
+        8px;
+
+
+
+    font-weight:
+        500;
+
+
+
+}
+
+
+
+
+
+
+
+.bar {
+
+
+    width:
+        100%;
+
+
+
+    height:
+        20px;
+
+
+
+    background:
+        #eee;
+
+
+
+    border-radius:
+        20px;
+
+
+
+    overflow:
+        hidden;
+
+
+
+}
+
+
+
+
+
+
+
+.bar-boy,
+.bar-girl {
+
+
+    height:
+        100%;
+
+
+
+    width:
+        0%;
+
+
+
+    transition:
+        width 1s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.bar-boy {
+
+
+    background:
+        var(--blue-soft);
+
+
+
+}
+
+
+
+
+
+
+.bar-girl {
+
+
+    background:
+        var(--pink-soft);
+
+
+
+}
+
+/* =====================================================
+   GALERÍA
+===================================================== */
+
+
+.gallery {
+
+
+    text-align:
+        center;
+
+
+
+}
+
+
+
+
+.gallery p {
+
+
+    color:
+        var(--text-light);
+
+
+
+    margin-bottom:
+        40px;
+
+
+
+}
+
+
+
+
+
+
+.gallery-slider {
+
+
+    width:
+        100%;
+
+
+
+    padding:
+        20px 0 60px;
+
+
+
+}
+
+
+
+
+
+.swiper-slide {
+
+
+    display:
+        flex;
+
+
+
+    justify-content:
+        center;
+
+
+
+}
+
+
+
+
+
+.swiper-slide img {
+
+
+    width:
+        100%;
+
+
+
+    max-width:
+        450px;
+
+
+
+    height:
+        500px;
+
+
+
+    object-fit:
+        cover;
+
+
+
+    border-radius:
+        30px;
+
+
+
+    box-shadow:
+        var(--shadow);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   CONFIRMACIÓN
+===================================================== */
+
+
+.confirmation {
+
+
+    text-align:
+        center;
+
+
+
+}
+
+
+
+
+
+.confirmation-card {
+
+
+    background:
+        white;
+
+
+
+    padding:
+        60px 30px;
+
+
+
+    border-radius:
+        40px;
+
+
+
+    box-shadow:
+        var(--shadow);
+
+
+
+}
+
+
+
+
+.confirmation-card span {
+
+
+    font-size:
+        55px;
+
+
+
+}
+
+
+
+
+
+.confirmation-card p {
+
+
+    color:
+        var(--text-light);
+
+
+
+    margin:
+        20px auto;
+
+
+
+    max-width:
+        500px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+
+.modal {
+
+
+    position:
+        fixed;
+
+
+
+    inset:
+        0;
+
+
+
+    background:
+        rgba(0,0,0,.35);
+
+
+
+    display:
+        none;
+
+
+
+    align-items:
+        center;
+
+
+
+    justify-content:
+        center;
+
+
+
+    z-index:
+        5000;
+
+
+
+    padding:
+        20px;
+
+
+
+}
+
+
+
+
+
+
+.modal.active {
+
+
+    display:
+        flex;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-content {
+
+
+    background:
+        var(--cream);
+
+
+
+    width:
+        100%;
+
+
+
+    max-width:
+        500px;
+
+
+
+    padding:
+        40px;
+
+
+
+    border-radius:
+        35px;
+
+
+
+    position:
+        relative;
+
+
+
+    animation:
+        modalShow .4s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.close-modal {
+
+
+    position:
+        absolute;
+
+
+
+    right:
+        20px;
+
+
+
+    top:
+        15px;
+
+
+
+    background:
+        none;
+
+
+
+    font-size:
+        30px;
+
+
+
+    color:
+        var(--text-dark);
+
+
+
+}
+
+
+
+
+
+
+
+.input-group {
+
+
+    margin-bottom:
+        20px;
+
+
+
+    text-align:
+        left;
+
+
+
+}
+
+
+
+
+
+
+.input-group label {
+
+
+    display:
+        block;
+
+
+
+    margin-bottom:
+        8px;
+
+
+
+    font-size:
+        14px;
+
+
+
+}
+
+
+
+
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+
+
+    width:
+        100%;
+
+
+
+    padding:
+        15px;
+
+
+
+    border:
+        1px solid #eee;
+
+
+
+    border-radius:
+        15px;
+
+
+
+    font-family:
+        var(--body-font);
+
+
+
+    background:
+        white;
+
+
+
+}
+
+
+
+
+
+.input-group textarea {
+
+
+    min-height:
+        100px;
+
+
+
+    resize:
+        none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   MENSAJE FINAL
+===================================================== */
+
+
+.final-message {
+
+
+    text-align:
+        center;
+
+
+
+}
+
+
+
+
+.final-content {
+
+
+    position:
+        relative;
+
+
+
+}
+
+
+
+
+
+
+.final-content img {
+
+
+    width:
+        130px;
+
+
+
+    margin:
+        auto;
+
+
+
+}
+
+
+
+
+
+
+
+.final-content h2 {
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        55px;
+
+
+
+    margin:
+        25px 0;
+
+
+
+}
+
+
+
+
+
+
+
+.final-content p {
+
+
+    max-width:
+        600px;
+
+
+
+    margin:
+        auto;
+
+
+
+    color:
+        var(--text-light);
+
+
+
+    line-height:
+        2;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+
+.footer {
+
+
+    padding:
+        40px 20px;
+
+
+
+    text-align:
+        center;
+
+
+
+    background:
+        var(--beige);
+
+
+
+}
+
+
+
+
+
+.footer p {
+
+
+    color:
+        var(--text-light);
+
+
+
+}
+
+
+
+
+
+
+
+.footer h3 {
+
+
+    font-family:
+        var(--title-font);
+
+
+
+    font-size:
+        40px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   UTILIDADES
+===================================================== */
+
+
+.hidden {
+
+
+    display:
+        none;
+
+
+
+}
+
+
+
+
+.no-scroll {
+
+
+    overflow:
+        hidden;
+
+
+
+}
+
+
+
+
+
+
+.text-center {
+
+
+    text-align:
+        center;
+
+
+
+}
+
+
+
+
+
+@keyframes modalShow {
+
+
+    from {
+
+
+        opacity:
+            0;
+
+
+        transform:
+            translateY(40px)
+            scale(.9);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity:
+            1;
+
+
+        transform:
+            translateY(0)
+            scale(1);
+
+
+
+    }
+
+
+}
+
+.confirmation-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-top:30px;
+}
+
+.whatsapp-mom{
+    background:#f8ddeb;
+    color:#7b5062;
+}
+
+.whatsapp-mom:hover{
+    transform:translateY(-3px);
+}
+
+.whatsapp-dad{
+    background:#d9eafd;
+    color:#44607d;
+}
+
+.whatsapp-dad:hover{
+    transform:translateY(-3px);
+}
